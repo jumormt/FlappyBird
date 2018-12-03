@@ -1,0 +1,11 @@
+Fitter Status : Successful - Wed Nov 02 14:23:00 2016
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Full Version
+Revision Name : flappybird
+Top-level Entity Name : flappybird
+Family : MAX II
+Device : EPM1270T144C5
+Timing Models : Final
+Total logic elements : 834 / 1,270 ( 66 % )
+Total pins : 52 / 116 ( 45 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

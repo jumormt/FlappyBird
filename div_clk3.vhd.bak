@@ -1,0 +1,53 @@
+--------------------------------------
+--Design Unit :	分频器3
+--File Name		:	div_clk3.vhd
+--Description	:	实现时钟3的分频，用于接入clk_3的1hz时钟
+--Limitations	: none
+--System			:	VHDL 93
+--Author			:	Xiao Cheng
+--Revision		: Version 1.0 2016-10-26
+---------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity div_clk3 is
+port
+	(
+	speed_mode:in integer range 0 to 3;
+	clk:in std_logic;
+	clk_3:out std_logic
+	);
+end div_clk3;
+
+architecture div_arc of div_clk3 is
+    signal count:integer range 0 to 499:=0;
+	signal clk_3_sig:std_logic;
+begin
+	p:process(clk)
+	begin
+		if clk'event and clk = '1' then
+			if speed_mode = 0 then
+				if count = 899 then count <=0 ;clk_3_sig <= not clk_3_sig;
+				else count <= count+1;
+				end if;
+			end if;
+			if speed_mode = 1 then
+				if count = 499 then count <=0 ;clk_3_sig <= not clk_3_sig;
+				else count <= count+1;
+				end if;
+			end if;
+			if speed_mode = 2 then
+				if count = 299 then count <=0 ;clk_3_sig <= not clk_3_sig;
+				else count <= count+1;
+				end if;
+			end if;
+			if speed_mode = 3 then
+				if count = 199 then count <=0 ;clk_3_sig <= not clk_3_sig;
+				else count <= count+1;
+				end if;
+			end if;
+		end if;
+	clk_3 <= clk_3_sig;
+	end process p;
+end div_arc;

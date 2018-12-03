@@ -1,0 +1,443 @@
+Quartus II
+Version 9.1 Build 222 10/21/2009 SJ Full Version
+45
+3268
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+div_clk
+# storage
+db|flappybird.(1).cnf
+db|flappybird.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+div_clk.vhd
+d0a797d95b5d83357cfc710d2892eff
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+div_clk:u0
+}
+# lmf
+c:|eda|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+div_clk3
+# storage
+db|flappybird.(2).cnf
+db|flappybird.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+div_clk3.vhd
+871dc6fe491e8a1213f5fc3c25729d2
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+div_clk3:u1
+}
+# lmf
+c:|eda|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+clk_3
+# storage
+db|flappybird.(3).cnf
+db|flappybird.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+clk_3.vhd
+f65e5677d34d8c1ea119e1d51603736
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+clk_3:u2
+}
+# lmf
+c:|eda|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+div_clk1
+# storage
+db|flappybird.(5).cnf
+db|flappybird.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+div_clk1.vhd
+a96a9a8739b2304b7bf4fea738dbf98
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+div_clk1:u4
+}
+# lmf
+c:|eda|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+bird_position
+# storage
+db|flappybird.(6).cnf
+db|flappybird.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+bird_position.vhd
+feb26aa7cbf730edc91c732aaa216d0
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+bird_position:u5
+}
+# lmf
+c:|eda|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+seg7_1
+# storage
+db|flappybird.(7).cnf
+db|flappybird.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+seg7_1.vhd
+d1746abc10134ca2da3b23914687a1c1
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(score_view)
+6 downto 0
+PARAMETER_STRING
+USR
+ constraint(cat)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+seg7_1:u6
+}
+# lmf
+c:|eda|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+mode_select
+# storage
+db|flappybird.(8).cnf
+db|flappybird.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mode_select.vhd
+a341e2f3824112ea5d6426353539b774
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+mode_select:u7
+}
+# lmf
+c:|eda|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+bird_position2
+# storage
+db|flappybird.(9).cnf
+db|flappybird.(9).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+bird_position2.vhd
+51c4cc10eeceb781661d7214ca3a923e
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+bird_position2:u8
+}
+# lmf
+c:|eda|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+cleanbtn
+# storage
+db|flappybird.(11).cnf
+db|flappybird.(11).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+cleanbtn.vhd
+9af6e428eeac23b59b3df6e0f26e5055
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+cleanbtn:u10
+}
+# lmf
+c:|eda|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+flappybird
+# storage
+db|flappybird.(0).cnf
+db|flappybird.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+flappybird.vhd
+5019262df15d6611f53d824df811bc3b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# lmf
+c:|eda|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+random
+# storage
+db|flappybird.(10).cnf
+db|flappybird.(10).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+random.vhd
+566610fb5d895b44418481160517f45
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+random:u9
+}
+# lmf
+c:|eda|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+pipe_move
+# storage
+db|flappybird.(4).cnf
+db|flappybird.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+pipe_move.vhd
+bdcb38585a94668a35fd4e6616ad8b70
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(g)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(r)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(c)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+pipe_move:u3
+}
+# lmf
+c:|eda|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# complete
+

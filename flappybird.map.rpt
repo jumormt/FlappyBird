@@ -1,0 +1,406 @@
+Analysis & Synthesis report for flappybird
+Wed Nov 02 14:22:20 2016
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                           ;
++-----------------------------+------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Wed Nov 02 14:22:20 2016    ;
+; Quartus II Version          ; 9.1 Build 222 10/21/2009 SJ Full Version ;
+; Revision Name               ; flappybird                               ;
+; Top-level Entity Name       ; flappybird                               ;
+; Family                      ; MAX II                                   ;
+; Total logic elements        ; 895                                      ;
+; Total pins                  ; 52                                       ;
+; Total virtual pins          ; 0                                        ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                            ;
++-----------------------------+------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EPM1270T144C5      ;                    ;
+; Top-level entity name                                                      ; flappybird         ; flappybird         ;
+; Family name                                                                ; MAX II             ; Stratix II         ;
+; Use Generated Physical Constraints File                                    ; Off                ;                    ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; Off                ; Off                ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report                         ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 100                ; 100                ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-4 processors         ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                           ;
++----------------------------------+-----------------+-----------------------+-------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path        ;
++----------------------------------+-----------------+-----------------------+-------------------------------------+
+; cleanbtn.vhd                     ; yes             ; User VHDL File        ; G:/flappybird5.0/cleanbtn.vhd       ;
+; div_clk.vhd                      ; yes             ; User VHDL File        ; G:/flappybird5.0/div_clk.vhd        ;
+; bird_position.vhd                ; yes             ; User VHDL File        ; G:/flappybird5.0/bird_position.vhd  ;
+; clk_3.vhd                        ; yes             ; User VHDL File        ; G:/flappybird5.0/clk_3.vhd          ;
+; div_clk1.vhd                     ; yes             ; User VHDL File        ; G:/flappybird5.0/div_clk1.vhd       ;
+; div_clk3.vhd                     ; yes             ; User VHDL File        ; G:/flappybird5.0/div_clk3.vhd       ;
+; flappybird.vhd                   ; yes             ; User VHDL File        ; G:/flappybird5.0/flappybird.vhd     ;
+; pipe_move.vhd                    ; yes             ; User VHDL File        ; G:/flappybird5.0/pipe_move.vhd      ;
+; seg7_1.vhd                       ; yes             ; User VHDL File        ; G:/flappybird5.0/seg7_1.vhd         ;
+; mode_select.vhd                  ; yes             ; User VHDL File        ; G:/flappybird5.0/mode_select.vhd    ;
+; bird_position2.vhd               ; yes             ; User VHDL File        ; G:/flappybird5.0/bird_position2.vhd ;
+; random.vhd                       ; yes             ; Auto-Found VHDL File  ; G:/flappybird5.0/random.vhd         ;
++----------------------------------+-----------------+-----------------------+-------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                        ;
++---------------------------------------------+----------------------+
+; Resource                                    ; Usage                ;
++---------------------------------------------+----------------------+
+; Total logic elements                        ; 895                  ;
+;     -- Combinational with no register       ; 611                  ;
+;     -- Register only                        ; 103                  ;
+;     -- Combinational with a register        ; 181                  ;
+;                                             ;                      ;
+; Logic element usage by number of LUT inputs ;                      ;
+;     -- 4 input functions                    ; 478                  ;
+;     -- 3 input functions                    ; 130                  ;
+;     -- 2 input functions                    ; 144                  ;
+;     -- 1 input functions                    ; 39                   ;
+;     -- 0 input functions                    ; 1                    ;
+;                                             ;                      ;
+; Logic elements by mode                      ;                      ;
+;     -- normal mode                          ; 778                  ;
+;     -- arithmetic mode                      ; 117                  ;
+;     -- qfbk mode                            ; 0                    ;
+;     -- register cascade mode                ; 0                    ;
+;     -- synchronous clear/load mode          ; 78                   ;
+;     -- asynchronous clear/load mode         ; 72                   ;
+;                                             ;                      ;
+; Total registers                             ; 284                  ;
+; Total logic cells in carry chains           ; 139                  ;
+; I/O pins                                    ; 52                   ;
+; Maximum fan-out node                        ; div_clk:u0|clk_1_sig ;
+; Maximum fan-out                             ; 239                  ;
+; Total fan-out                               ; 3359                 ;
+; Average fan-out                             ; 3.55                 ;
++---------------------------------------------+----------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                            ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name           ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------+--------------+
+; |flappybird                ; 895 (1)     ; 284          ; 0          ; 52   ; 0            ; 611 (1)      ; 103 (0)           ; 181 (0)          ; 139 (0)         ; 0 (0)      ; |flappybird                   ; work         ;
+;    |bird_position2:u8|     ; 5 (5)       ; 3            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 3 (3)            ; 0 (0)           ; 0 (0)      ; |flappybird|bird_position2:u8 ; work         ;
+;    |bird_position:u5|      ; 16 (16)     ; 12           ; 0          ; 0    ; 0            ; 4 (4)        ; 3 (3)             ; 9 (9)            ; 0 (0)           ; 0 (0)      ; |flappybird|bird_position:u5  ; work         ;
+;    |cleanbtn:u10|          ; 70 (70)     ; 49           ; 0          ; 0    ; 0            ; 21 (21)      ; 0 (0)             ; 49 (49)          ; 42 (42)         ; 0 (0)      ; |flappybird|cleanbtn:u10      ; work         ;
+;    |clk_3:u2|              ; 11 (11)     ; 5            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 5 (5)            ; 5 (5)           ; 0 (0)      ; |flappybird|clk_3:u2          ; work         ;
+;    |div_clk1:u4|           ; 4 (4)       ; 4            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |flappybird|div_clk1:u4       ; work         ;
+;    |div_clk3:u1|           ; 20 (20)     ; 10           ; 0          ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 10 (10)          ; 9 (9)           ; 0 (0)      ; |flappybird|div_clk3:u1       ; work         ;
+;    |div_clk:u0|            ; 35 (35)     ; 16           ; 0          ; 0    ; 0            ; 19 (19)      ; 9 (9)             ; 7 (7)            ; 15 (15)         ; 0 (0)      ; |flappybird|div_clk:u0        ; work         ;
+;    |pipe_move:u3|          ; 649 (649)   ; 149          ; 0          ; 0    ; 0            ; 500 (500)    ; 79 (79)           ; 70 (70)          ; 58 (58)         ; 0 (0)      ; |flappybird|pipe_move:u3      ; work         ;
+;    |random:u9|             ; 23 (23)     ; 10           ; 0          ; 0    ; 0            ; 13 (13)      ; 4 (4)             ; 6 (6)            ; 10 (10)         ; 0 (0)      ; |flappybird|random:u9         ; work         ;
+;    |seg7_1:u6|             ; 61 (61)     ; 26           ; 0          ; 0    ; 0            ; 35 (35)      ; 8 (8)             ; 18 (18)          ; 0 (0)           ; 0 (0)      ; |flappybird|seg7_1:u6         ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; pipe_move:u3|random[16][2]            ; Lost fanout        ;
+; pipe_move:u3|random[16][1]            ; Lost fanout        ;
+; pipe_move:u3|random[16][0]            ; Lost fanout        ;
+; Total Number of Removed Registers = 3 ;                    ;
++---------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 284   ;
+; Number of registers using Synchronous Clear  ; 63    ;
+; Number of registers using Synchronous Load   ; 15    ;
+; Number of registers using Asynchronous Clear ; 60    ;
+; Number of registers using Asynchronous Load  ; 12    ;
+; Number of registers using Clock Enable       ; 139   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------+
+; Inverted Register Statistics                      ;
++-----------------------------------------+---------+
+; Inverted Register                       ; Fan out ;
++-----------------------------------------+---------+
+; pipe_move:u3|C[0]                       ; 1       ;
+; pipe_move:u3|C[1]                       ; 1       ;
+; pipe_move:u3|C[2]                       ; 1       ;
+; pipe_move:u3|C[3]                       ; 1       ;
+; pipe_move:u3|C[4]                       ; 1       ;
+; pipe_move:u3|C[5]                       ; 1       ;
+; pipe_move:u3|C[6]                       ; 1       ;
+; pipe_move:u3|C[7]                       ; 1       ;
+; pipe_move:u3|count[3]                   ; 50      ;
+; pipe_move:u3|count[2]                   ; 63      ;
+; pipe_move:u3|count[1]                   ; 63      ;
+; pipe_move:u3|count_p[2]                 ; 1       ;
+; pipe_move:u3|count_p[3]                 ; 1       ;
+; pipe_move:u3|count_p[1]                 ; 1       ;
+; pipe_move:u3|count[0]                   ; 61      ;
+; pipe_move:u3|count_p[0]                 ; 1       ;
+; bird_position:u5|position_p[2]          ; 1       ;
+; bird_position:u5|position_n[2]          ; 7       ;
+; bird_position2:u8|position_n[2]         ; 7       ;
+; bird_position:u5|position_n_x[2]        ; 7       ;
+; bird_position:u5|position_p_x[2]        ; 1       ;
+; Total number of inverted registers = 21 ;         ;
++-----------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |flappybird|bird_position:u5|position_p[0]   ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |flappybird|bird_position2:u8|position_n[0]  ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |flappybird|bird_position:u5|position_p_x[1] ;
+; 7:1                ; 9 bits    ; 36 LEs        ; 9 LEs                ; 27 LEs                 ; Yes        ; |flappybird|div_clk3:u1|count[0]             ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |flappybird|pipe_move:u3|score_sig2[3]       ;
+; 30:1               ; 2 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; Yes        ; |flappybird|seg7_1:u6|score_view[2]          ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |flappybird|pipe_move:u3|count_s1[1]         ;
+; 20:1               ; 4 bits    ; 52 LEs        ; 0 LEs                ; 52 LEs                 ; Yes        ; |flappybird|pipe_move:u3|score_sig[3]        ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 0 LEs                ; 12 LEs                 ; Yes        ; |flappybird|pipe_move:u3|score2[2]           ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 0 LEs                ; 18 LEs                 ; Yes        ; |flappybird|pipe_move:u3|score[3]            ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |flappybird|bird_position:u5|position_p[2]   ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |flappybird|bird_position:u5|position_n_x[2] ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; No         ; |flappybird|pipe_move:u3|game_over_sig       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
+    Info: Processing started: Wed Nov 02 14:21:47 2016
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off flappybird -c flappybird
+Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info: Found 2 design units, including 1 entities, in source file cleanbtn.vhd
+    Info: Found design unit 1: cleanbtn-cleanbtn_arc
+    Info: Found entity 1: cleanbtn
+Info: Found 2 design units, including 1 entities, in source file div_clk.vhd
+    Info: Found design unit 1: div_clk-div_arc
+    Info: Found entity 1: div_clk
+Info: Found 2 design units, including 1 entities, in source file bird_position.vhd
+    Info: Found design unit 1: bird_position-bird_position_arc
+    Info: Found entity 1: bird_position
+Info: Found 2 design units, including 1 entities, in source file clk_3.vhd
+    Info: Found design unit 1: clk_3-clk_3_arc
+    Info: Found entity 1: clk_3
+Info: Found 2 design units, including 1 entities, in source file div_clk1.vhd
+    Info: Found design unit 1: div_clk1-div_arc
+    Info: Found entity 1: div_clk1
+Info: Found 2 design units, including 1 entities, in source file div_clk3.vhd
+    Info: Found design unit 1: div_clk3-div_arc
+    Info: Found entity 1: div_clk3
+Info: Found 2 design units, including 1 entities, in source file flappybird.vhd
+    Info: Found design unit 1: flappybird-flappy_bird_arc
+    Info: Found entity 1: flappybird
+Info: Found 2 design units, including 1 entities, in source file pipe_move.vhd
+    Info: Found design unit 1: pipe_move-pipe_move_arc
+    Info: Found entity 1: pipe_move
+Info: Found 2 design units, including 1 entities, in source file seg7_1.vhd
+    Info: Found design unit 1: seg7_1-seg7_1_arc
+    Info: Found entity 1: seg7_1
+Info: Found 2 design units, including 1 entities, in source file div_clk4.vhd
+    Info: Found design unit 1: div_clk4-div_arc
+    Info: Found entity 1: div_clk4
+Info: Found 2 design units, including 1 entities, in source file mode_select.vhd
+    Info: Found design unit 1: mode_select-mode_select_arc
+    Info: Found entity 1: mode_select
+Info: Found 2 design units, including 1 entities, in source file bird_position2.vhd
+    Info: Found design unit 1: bird_position2-bird_position_arc
+    Info: Found entity 1: bird_position2
+Info: Elaborating entity "flappybird" for the top level hierarchy
+Info: Elaborating entity "div_clk" for hierarchy "div_clk:u0"
+Warning (10492): VHDL Process Statement warning at div_clk.vhd(35): signal "clk_1_sig" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Elaborating entity "div_clk3" for hierarchy "div_clk3:u1"
+Warning (10492): VHDL Process Statement warning at div_clk3.vhd(52): signal "clk_3_sig" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Elaborating entity "clk_3" for hierarchy "clk_3:u2"
+Warning (10492): VHDL Process Statement warning at clk_3.vhd(35): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at clk_3.vhd(47): signal "flag_1_sig" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Elaborating entity "pipe_move" for hierarchy "pipe_move:u3"
+Warning (10540): VHDL Signal Declaration warning at pipe_move.vhd(43): used explicit default value for signal "random1" because signal was never assigned a value
+Warning (10492): VHDL Process Statement warning at pipe_move.vhd(79): signal "game_over_sig" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pipe_move.vhd(80): signal "game_over_sig2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pipe_move.vhd(81): signal "score_sig2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at pipe_move.vhd(82): signal "score_sig" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Elaborating entity "div_clk1" for hierarchy "div_clk1:u4"
+Warning (10492): VHDL Process Statement warning at div_clk1.vhd(37): signal "clk_1_sig" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at div_clk1.vhd(38): signal "clk_1_sig" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Elaborating entity "bird_position" for hierarchy "bird_position:u5"
+Warning (10492): VHDL Process Statement warning at bird_position.vhd(48): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bird_position.vhd(51): signal "position_p_x" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bird_position.vhd(52): signal "position_n_x" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bird_position.vhd(54): signal "position_p" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bird_position.vhd(55): signal "position_n" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bird_position.vhd(58): signal "clk_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bird_position.vhd(65): signal "clk_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bird_position.vhd(72): signal "clk_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bird_position.vhd(72): signal "btn_left" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bird_position.vhd(79): signal "clk_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bird_position.vhd(79): signal "btn_right" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bird_position.vhd(85): signal "position_p" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bird_position.vhd(86): signal "position_n" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bird_position.vhd(87): signal "position_p_x" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bird_position.vhd(88): signal "position_n_x" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Elaborating entity "seg7_1" for hierarchy "seg7_1:u6"
+Info: Elaborating entity "mode_select" for hierarchy "mode_select:u7"
+Warning (10492): VHDL Process Statement warning at mode_select.vhd(40): signal "sw7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at mode_select.vhd(40): signal "sw6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Elaborating entity "bird_position2" for hierarchy "bird_position2:u8"
+Warning (10492): VHDL Process Statement warning at bird_position2.vhd(35): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bird_position2.vhd(37): signal "position_p" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bird_position2.vhd(38): signal "position_n" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bird_position2.vhd(41): signal "clk_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bird_position2.vhd(48): signal "clk_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bird_position2.vhd(64): signal "position_p" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at bird_position2.vhd(65): signal "position_n" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning: Using design file random.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: random-random_arc
+    Info: Found entity 1: random
+Info: Elaborating entity "random" for hierarchy "random:u9"
+Warning (10492): VHDL Process Statement warning at random.vhd(41): signal "random_sig" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Elaborating entity "cleanbtn" for hierarchy "cleanbtn:u10"
+Info: Registers with preset signals will power-up high
+Info: 3 registers lost all their fanouts during netlist optimizations. The first 3 are displayed below.
+    Info: Register "pipe_move:u3|random[16][2]" lost all its fanouts during netlist optimizations.
+    Info: Register "pipe_move:u3|random[16][1]" lost all its fanouts during netlist optimizations.
+    Info: Register "pipe_move:u3|random[16][0]" lost all its fanouts during netlist optimizations.
+Info: Implemented 947 device resources after synthesis - the final resource count might be different
+    Info: Implemented 13 input pins
+    Info: Implemented 39 output pins
+    Info: Implemented 895 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 37 warnings
+    Info: Peak virtual memory: 189 megabytes
+    Info: Processing ended: Wed Nov 02 14:22:34 2016
+    Info: Elapsed time: 00:00:47
+    Info: Total CPU time (on all processors): 00:00:04
+
+

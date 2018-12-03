@@ -1,0 +1,134 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 222 10/21/2009 SJ Full Version
+# Date created = 20:12:21  October 18, 2016
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		flappybird_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX II"
+set_global_assignment -name DEVICE EPM1270T144C5
+set_global_assignment -name TOP_LEVEL_ENTITY flappybird
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:12:21  OCTOBER 18, 2016"
+set_global_assignment -name LAST_QUARTUS_VERSION 9.1
+set_global_assignment -name EDA_TIMING_ANALYSIS_TOOL "PrimeTime (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_timing_analysis
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name DEVICE_FILTER_PACKAGE TQFP
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 144
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 5
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR 3.3V
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name MISC_FILE "D:/ff/flappybird.dpf"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_20 -to btn_down
+set_location_assignment PIN_61 -to btn_up
+set_location_assignment PIN_1 -to C[7]
+set_location_assignment PIN_2 -to C[6]
+set_location_assignment PIN_3 -to C[5]
+set_location_assignment PIN_4 -to C[4]
+set_location_assignment PIN_5 -to C[3]
+set_location_assignment PIN_6 -to C[2]
+set_location_assignment PIN_7 -to C[1]
+set_location_assignment PIN_8 -to C[0]
+set_location_assignment PIN_18 -to clk
+set_location_assignment PIN_30 -to cat[6]
+set_location_assignment PIN_70 -to cat[5]
+set_location_assignment PIN_69 -to cat[4]
+set_location_assignment PIN_68 -to cat[3]
+set_location_assignment PIN_67 -to cat[2]
+set_location_assignment PIN_66 -to cat[1]
+set_location_assignment PIN_63 -to cat[0]
+set_location_assignment PIN_38 -to G[7]
+set_location_assignment PIN_39 -to G[6]
+set_location_assignment PIN_40 -to G[5]
+set_location_assignment PIN_41 -to G[4]
+set_location_assignment PIN_42 -to G[3]
+set_location_assignment PIN_43 -to G[2]
+set_location_assignment PIN_44 -to G[1]
+set_location_assignment PIN_45 -to G[0]
+set_location_assignment PIN_11 -to R[7]
+set_location_assignment PIN_12 -to R[6]
+set_location_assignment PIN_13 -to R[5]
+set_location_assignment PIN_14 -to R[4]
+set_location_assignment PIN_15 -to R[3]
+set_location_assignment PIN_16 -to R[2]
+set_location_assignment PIN_21 -to R[1]
+set_location_assignment PIN_22 -to R[0]
+set_global_assignment -name MISC_FILE "F:/ff/flappybird.dpf"
+set_location_assignment PIN_62 -to score_view[6]
+set_location_assignment PIN_59 -to score_view[5]
+set_location_assignment PIN_58 -to score_view[4]
+set_location_assignment PIN_57 -to score_view[3]
+set_location_assignment PIN_55 -to score_view[2]
+set_location_assignment PIN_53 -to score_view[1]
+set_location_assignment PIN_52 -to score_view[0]
+set_global_assignment -name MISC_FILE "E:/ff/flappybird.dpf"
+set_location_assignment PIN_31 -to cat[7]
+set_location_assignment PIN_124 -to reset
+set_global_assignment -name MISC_FILE "E:/ff2/flappybird.dpf"
+set_location_assignment PIN_134 -to sw0
+set_location_assignment PIN_133 -to sw1
+set_location_assignment PIN_125 -to sw7
+set_location_assignment PIN_127 -to sw6
+set_location_assignment PIN_121 -to btn_up2
+set_location_assignment PIN_122 -to btn_down2
+set_global_assignment -name MISC_FILE "F:/ff2双人/flappybird.dpf"
+set_location_assignment PIN_130 -to pause
+set_global_assignment -name MISC_FILE "D:/flappybird+速度+双人/flappybird.dpf"
+set_location_assignment PIN_91 -to btn_left
+set_location_assignment PIN_89 -to btn_right
+set_location_assignment PIN_144 -to btn_right2
+set_location_assignment PIN_143 -to btn_left2
+set_global_assignment -name MISC_FILE "G:/flappybird+速度+双人1/flappybird.dpf"
+set_global_assignment -name MISC_FILE "H:/flappybird+速度+双人1/flappybird.dpf"
+set_global_assignment -name MISC_FILE "G:/flappybird3.0/flappybird.dpf"
+set_global_assignment -name MISC_FILE "G:/flappybird5.0/flappybird.dpf"
+set_global_assignment -name VHDL_FILE cleanbtn.vhd
+set_global_assignment -name VHDL_FILE div_clk.vhd
+set_global_assignment -name VHDL_FILE bird_position.vhd
+set_global_assignment -name VHDL_FILE clk_3.vhd
+set_global_assignment -name VHDL_FILE div_clk1.vhd
+set_global_assignment -name VHDL_FILE div_clk3.vhd
+set_global_assignment -name VHDL_FILE flappybird.vhd
+set_global_assignment -name VHDL_FILE pipe_move.vhd
+set_global_assignment -name VHDL_FILE seg7_1.vhd
+set_global_assignment -name VHDL_FILE div_clk4.vhd
+set_global_assignment -name VHDL_FILE mode_select.vhd
+set_global_assignment -name VHDL_FILE bird_position2.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE flappybird.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE bird_position.vwf
