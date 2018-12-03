@@ -9,6 +9,5 @@
 多种速度可以选择； 可以进行双人游戏，由两个人各自控制一只小鸟进行游戏； 增加其他游戏模式； 为游戏增加音效； 在 LCD1602 液晶屏上显示游戏成绩； 自拟其他功能。
 
 ## 设计图
-![](https://github.com/jumormt/FlappyBird/master/blob/flappybird.jpg)
-
+![](https://github.com/jumormt/FlappyBird/blob/master/flappybird.jpg)
 详见实验报告
